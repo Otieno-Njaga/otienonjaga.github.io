@@ -1,0 +1,221 @@
+/*style.css body*/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Sans-Serif;
+    background-color: lightgray;
+}
+.container{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+}
+
+/*style.css header*/
+
+.menu-toggle{
+    display: none;
+    background-color: #333;
+    color: yellow;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    background-color:green;
+    color: black;
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+    text-align: center;
+}
+
+.logo img{
+    height: 50px;
+}
+
+nav{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    background-color: yellow;
+    padding: 10px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li{
+    margin: 0 15px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+}
+
+.header-icon img{
+    height: 30px;
+}
+
+/*Responsive Design*/
+
+
+@media(max-width:768px){
+    .menu-toggle{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    nav.active{
+        display: block;
+    }
+}
+
+
+@media(max-width:768px){
+    nav{
+        display: none;
+    }
+    .header-icon img{
+        height: 20px;
+    }
+}
+
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+/*Main Content Styles*/
+main{
+    padding: 20px;
+}
+
+section{
+    margin-bottom: 6rem;
+}
+
+.Home,
+.About,
+.services,
+.Portfolio,
+.Contact{
+    background-color: lightgray;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+
+}
+
+/*style.css footer*/
+footer{
+    background-color: green;
+    color: black;
+    padding: 0px 0;
+    text-align: center;
+}
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section{
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h2{
+    margin-top: 0;
+}
+
+.footer-content{
+    display: none;
+}
+
+.footer-content.active{
+    display: block;
+}
+
+.footer-toggle{
+    background-color: green;
+    border: none;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px 0;
+    text-align: left;
+    width: 100%;
+}
+
+.footer-toggle:focus{
+    outline: none;
+}
+
+.footer-section p,
+.footer-section ul{
+    margin: 10px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section a{
+    color:black;
+    text-decoration: none;
+}
+
+.footer-section a:hover{
+    text-decoration: underline;
+}
+
+.footer-bottom{
+    background-color:green;
+    padding: 10px 0;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socials img{
+    width: 30px;
+    height: 30px;
+}
+
+/*Responsive Design*/
+@media(max-width:768px){
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section{
+        margin: 20px 0;
+    }
+}
